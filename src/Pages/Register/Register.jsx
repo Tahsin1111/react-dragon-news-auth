@@ -21,7 +21,7 @@ const Register = () => {
                 console.log(result.user)
             })
             .catch(error => {
-                console.error(error)
+                console.log(error);
             })
     }
     return (
@@ -35,25 +35,25 @@ const Register = () => {
                             <label className="label">
                                 <span className="label-text">Name</span>
                             </label>
-                            <input type="text" placeholder="Name" className="input input-bordered" />
+                            <input type="text" placeholder="Name" name="name" className="input input-bordered" />
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Photo URL</span>
                             </label>
-                            <input type="text" placeholder="Photo URL" className="input input-bordered" />
+                            <input type="text" placeholder="Photo URL" name="photo" className="input input-bordered" />
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
-                            <input type="email" placeholder="Email" className="input input-bordered" required />
+                            <input type="email" placeholder="Email" name="email" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type="password" placeholder="Password" className="input input-bordered" required />
+                            <input type="password" placeholder="Password" name="password" className="input input-bordered" required />
                             <label className="label">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
